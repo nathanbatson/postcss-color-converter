@@ -84,7 +84,7 @@ const convertColor = (node, inputColorFormat, options) => {
 
       if (options.outputColorFormat === RGB_COLOR) {
         colorData = {r: +c1.value, g: +c2.value, b: +c3.value};
-      } else if (options.outputColorFormat === RGBA_COLOR){
+      } else if (options.outputColorFormat === RGBA_COLOR) {
         colorData = {r: +c1.value, g: +c2.value, b: +c3.value, a: alpha};
       } else {
         colorData = colorFn[`rgb2${options.outputColorFormat}`]([+c1.value, +c2.value, +c3.value])

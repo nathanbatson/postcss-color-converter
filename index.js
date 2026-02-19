@@ -63,7 +63,7 @@ module.exports = (options = {}) => {
               inputColorFormat = HEX_COLOR;
             } else if (!node.isHex && node.type === 'word') {
               inputColorFormat = KEYWORD_COLOR;
-            } else if (node.name === 'rgb'){
+            } else if (node.name === 'rgb') {
               inputColorFormat = RGB_COLOR;
             } else if (node.name === 'rgba') {
               inputColorFormat = RGBA_COLOR;
